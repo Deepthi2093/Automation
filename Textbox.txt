@@ -1,0 +1,5 @@
+WebDriver d =new ChromeDriver();
+System.setProperty("WebDriver.chrome.driver", "C:\\chropath\\chromedriver.exe");
+d.get("https://testautomationpractice.blogspot.com/");
+WebElement search = d.findElement(By.id("Wikipedia1_wikipedia-search-input"));
+search.sendKeys("iphone");
